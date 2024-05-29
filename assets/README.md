@@ -1,4 +1,4 @@
-<h1 align="center"> DevLinkss </h1>
+<h1 align="center"> DevLinks </h1>
 
 <p align="center">
 Desenvolvimento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
