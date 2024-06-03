@@ -98,6 +98,11 @@ body * {
   left: 0;
   z-index: 1;
   transform: translatey(-50%);
+  animation: slide-back 0.4s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -112,8 +117,7 @@ body * {
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 /* Abaixo é o tratamento das listas*(Links de direcionamentos)*/
@@ -179,8 +183,32 @@ footer {
 }
 /* media queries */
 @media (min-width: 700px) {
-:root { --bg-url: url(./assets/bg.jpg); }
+  :root {
+    --bg-url: url(./assets/bg.jpg);
+  }
 
-  .light {--bg-url: url(./assets/bg-light.jpg);}
+  .light {
+    --bg-url: url(./assets/bg-light.jpg);
+  }
+}
 
+/* animation */
+@keyframes slide-in {
+  fron {
+    left: 0;
+  }
+
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  fron {
+    left: 50%;
+  }
+
+  to {
+    left: 0;
+  }
 }
